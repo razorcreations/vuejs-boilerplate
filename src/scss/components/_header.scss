@@ -1,0 +1,31 @@
+.app-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9000;
+
+	@media only screen
+		and (display-mode: fullscreen)
+		and (device-width: 414px)
+		and (device-height: 896px)
+		and (-webkit-device-pixel-ratio: 2) {
+
+	}
+
+	@media only screen
+		and (display-mode: fullscreen)
+		and (device-width: 375px)
+		and (device-height: 812px)
+		and (-webkit-device-pixel-ratio: 3) {
+
+	}
+
+	@media only screen
+		and (display-mode: fullscreen)
+		and (device-width: 414px)
+		and (device-height: 896px)
+		and (-webkit-device-pixel-ratio: 3) {
+
+	}
+}
