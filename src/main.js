@@ -15,7 +15,6 @@ import router from './router';
 import './registerServiceWorker';
 
 import moment from 'moment';
-import Datetime from 'vue-datetime';
 import 'vue-datetime/dist/vue-datetime.css';
 import { Settings } from 'luxon';
 import Vuelidate from 'vuelidate';
@@ -59,8 +58,6 @@ window.axios.interceptors.response.use(function (response) {
 });
 
 Vue.config.productionTip = false;
-
-Vue.use(Datetime);
 
 if (process.env.BUGSNAG_KEY) {
 	window.bugsnagClient = bugsnag(process.env.BUGSNAG_KEY);

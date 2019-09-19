@@ -4,30 +4,19 @@
 			v-if="isLoggedIn"
 		/>
 		<router-view />
-		<app-nav v-if="isLoggedIn" />
-		<app-search :class="{show: searchOpen}" />
 	</div>
 </template>
 
 <script>
-import AppSearch from '@/components/SearchComponent';
 import { mapState, mapActions, mapMutations } from 'vuex';
 
 export default {
 	name: 'App',
 
-	components: {
-		AppSearch,
-	},
-
 	data () {
 		return {
 			isLoggedIn: false,
 		};
-	},
-
-	computed: {
-		...mapState(['searchOpen']),
 	},
 
 	watch: {
